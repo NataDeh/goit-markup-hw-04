@@ -106,7 +106,7 @@ ul{
     color: var(--accent-hover-color);
 }
 .contact{
-    display: block;
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -119,6 +119,46 @@ ul{
     display: block;
     margin-right: 50px;
 }
+
+.contact-item::before{
+    content: "";
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-envelope{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    /* fill: #757575; */
+    fill: currentColor;
+}
+.icon-envelope::before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/svg/envelope.svg);
+    background-size: contain;
+}
+
+.icon-phone{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    /* fill: #757575; */
+    fill: currentColor;
+}
+.icon-phone::before{
+    contain: "";
+    display: block;
+    width: 10px;
+    height: 16px;
+    background-image: url(../images/svg/phone.svg);
+    background-size: contain;
+}
+
 
 /* -------HERO----------- */
 .hero{
@@ -215,12 +255,26 @@ width: 270px;
     color: var(--secondary-title-color);
     margin-bottom: 10px; 
 }
+.about-item::before{
+    content: "";
+    display: block;
+    /* width: 270px; */
+    height: 120px;
+    outline: 1px solid #188CE8;
+    margin-bottom: 30px;
+    background-color: rgba(245, 244, 250, 1);
+    background-image: url(../images/sprite.svg/icon-antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .about-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     Letter-spacing: 0.03em;
     color: var(--main-text-color);
+    
 }
 
 /* --------WORK--------------- */
@@ -252,6 +306,8 @@ img{
 /* ----------TEAM-------------- */
 
 .team{
+    max-width: 1600px;
+    margin: 0 auto;
     background-color: rgba(245, 244, 250, 1);
 }
 .team-item{
@@ -288,6 +344,8 @@ img{
 
 /* Footer */
 .footer{
+    max-width: 1600px;
+    margin: 0 auto;
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;

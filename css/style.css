@@ -111,6 +111,7 @@ ul{
     font-size: 14px;
     line-height: 1.14;
     Letter-spacing: 0.02em;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;  
     color: var(--main-text-color); 
@@ -118,13 +119,6 @@ ul{
 .contact-item:not(:last-child){
     display: block;
     margin-right: 50px;
-}
-
-.contact-item::before{
-    content: "";
-    
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .icon-envelope{
@@ -256,29 +250,15 @@ width: 270px;
     margin-bottom: 10px; 
 }
 
-.about-item::before{
-    content: "";
-    display: block;
+.about-icon{
+    display: flex;
     height: 120px;
-    /* outline: 1px solid #188CE8; */
-    margin-bottom: 30px;
+    justify-content: center;
     background-color: rgba(245, 244, 250, 1);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px;
-}
-
-.icon-antena::before{
-    background-image: url(../images/svg/antenna.svg);
-}
-.icon-clock::before{
-    background-image: url(../images/svg/clock.svg);
-}
-.icon-dsagram::before{
-    background-image: url(../images/svg/diagram.svg);
-}
-.icon-astronaut::before{
-    background-image: url(../images/svg/astronaut.svg);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-text{
@@ -287,7 +267,6 @@ width: 270px;
     line-height: 1.7;
     Letter-spacing: 0.03em;
     color: var(--main-text-color);
-    
 }
 
 /* --------WORK--------------- */
@@ -542,7 +521,7 @@ img{
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    color: rgba(175, 177, 184, 1);
+    color: #FFFFFF;
 }
 .join-social-icon{
     fill: currentColor;
@@ -550,7 +529,6 @@ img{
 .join-social-link:hover,
 .join-social-link:focus{
     background-color: var(--accent-hover-color);
-    color: var(--main-title-color);
 }
 
 
@@ -566,7 +544,6 @@ img{
 }
 .filter-item{
     height: 38px;
-    
 }
 .filter-item:not(:last-child){
     margin-right: 8px;
@@ -584,6 +561,7 @@ img{
     border-radius: 4px;
     background-color: var(--accent-color);
     color: rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
 .filter{
     height: 38px;
@@ -598,6 +576,7 @@ img{
     padding-bottom: 6px;
     padding-left: 22px;
     color: rgba(33, 33, 33, 1);
+    cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
@@ -638,6 +617,9 @@ img{
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-title-color);
+}
+.portfolio-link{
+    display: block;
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
